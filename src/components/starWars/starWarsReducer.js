@@ -1,6 +1,5 @@
 const initialState = {
-  starWarsData: [],
-  mirInformation: []
+  starWarsData: []
 };
 
 export const starWarsReducer = (state = initialState, action) => {
