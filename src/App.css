@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-image: url("./images/starWar.jpg");
+  /* background-image: url("./images/starWar.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -38,7 +38,7 @@ li {
   color: red;
 }
 h1 {
-  color: lightgray;
+  color: black;
   text-align: center;
   margin: 20px;
 }

@@ -2,13 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 
 const StarWarsCard = props => {
-  console.log("carddddd", props);
   return (
     <div className="starWarsCard">
       {props.data &&
-        props.data.map(e => {
+        props.data.map((e, i) => {
           return (
-            <ul className="dataWrapper">
+            <ul key={i} className="dataWrapper">
               <li>{e.name}</li>
               <li>{e.skin_color}</li>
               <li>{e.gender}</li>
