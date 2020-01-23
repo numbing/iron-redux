@@ -1,10 +1,10 @@
 import axios from "axios";
 
-export const getWeatherData = () => dispatch => {
+export const getWeatherData = city => dispatch => {
   const API_KEY = "e5ced403947117877134523bd0915d32\n";
   axios
     .get(
-      `http://api.openweathermap.org/data/2.5/weather?q=berlin,de&appid=${API_KEY}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?q=${city},de&appid=${API_KEY}&units=metric`
     )
     .then(res =>
       dispatch({
