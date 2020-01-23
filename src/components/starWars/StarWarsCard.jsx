@@ -4,8 +4,17 @@ import { connect } from "react-redux";
 const StarWarsCard = props => {
   console.log("carddddd", props);
   return (
-    <div>
-      <h1> i am card</h1>
+    <div className="starWarsCard">
+      {props.data &&
+        props.data.map(e => {
+          return (
+            <ul className="dataWrapper">
+              <li>{e.name}</li>
+              <li>{e.skin_color}</li>
+              <li>{e.gender}</li>
+            </ul>
+          );
+        })}
     </div>
   );
 };

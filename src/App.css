@@ -18,6 +18,11 @@ body {
   display: flex;
   justify-content: center;
 }
+.starWarsMain {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .dataWrapper {
   width: 350px;
